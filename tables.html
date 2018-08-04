@@ -25,17 +25,17 @@
             </div>
           </div>
         </div>
-        <div class = "row justify-content-center" style="width: 80%">
+        <div class = "row justify-content-center" style="width: 100%">
           <h3>Current Reservations</h3>
           <br>
-          <div id="tableSection">
+          <div class="justify-content-center" id="tableSection" style="width: 100%">
 
           </div>
         </div>
-        <div class = "row justify-content-center" style="width: 80%">
+        <div class = "row justify-content-center" style="width: 100%">
           <h3>Current Waiting List</h3>
           <br>
-          <div id="waitlistSection">
+          <div class="justify-content-center" id="waitlistSection" style="width: 100%">
 
           </div>
         </div>
@@ -79,7 +79,7 @@
 
 
                         // Then display the remaining fields in the HTML (Section Name, Date, URL)
-                        $("#tableWell-"+ i+1).append('<h2><span class="label label-primary">' + tableNumber + "</span> | " + tableData[i].customerID + "</h2>");
+                        $("#tableWell-"+ i+1).append('<h2 class="text-center"><span class="label label-primary">' + tableNumber + "</span> | " + tableData[i].customerID + "</h2>");
                     }
                 });
             }
@@ -114,7 +114,7 @@
                         var tableNumber = i + 1;
 
                         // Then display the remaining fields in the HTML (Section Name, Date, URL)
-                        $("#waitlistWell-"+ i+1).append('<h2><span class="label label-primary">' + tableNumber + "</span> | " + waitlistData[i].customerID + "</h2>");
+                        $("#waitlistWell-"+ i+1).append('<h2 class="text-center"><span class="label label-primary">' + tableNumber + "</span> | " + waitlistData[i].customerID + "</h2>");
                     }
                 });
             }
