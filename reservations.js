@@ -13,7 +13,7 @@ var PORT = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// Star Wars Characters (DATA)
+// Tables reservations (DATA)
 // =============================================================
 var reservations = [
   {
@@ -44,7 +44,7 @@ var reservations = [
 
 // Basic route that sends the user first to the AJAX Page
 app.get("/", function(req, res) {
-  // res.send("Welcome to the Star Wars Page!")
+  // res.send("Welcome to the Tables Page!")
   res.sendFile(path.join(__dirname, "view.html"));
 });
 
