@@ -13,25 +13,26 @@
   <body>
     <body>
       <div class = "container">
-        <div class = "row">
-          <div class="jumbotron">
-            <h1 class="display-4">Chez Bentley</h1>
-            <p class="lead">Current Reservations and Wait List</p>
+        <div class = "row" style="width: 100%">
+          <div class="jumbotron" style ="width: 100%; margin: 0 auto;">
+            <h1 class="display-4 text-center">Chez Bentley</h1>
+            <p class="lead text-center">Make your Reservation</p>
             <hr class="my-4">
-            <div class = "row text-center">
-              <span><a class="btn btn-primary btn-lg" href="./reserve" role="button">Make Reservations</a></span>
-              <span><a class="btn btn-primary btn-lg" href="./" role="button">Home</a></span>
+            <p class="text-center">Reservations that cannot immediately be fullfilled will be added to our Wait List</p>
+            <div class = "row justify-content-center">
+              <div style = "margin:2vh 2vh"><a class="btn btn-primary btn-lg" href="./tables" role="button">Tables</a></div>
+              <div style = "margin:2vh 2vh"><a class="btn btn-primary btn-lg" href="./" role="button">Home</a></div>
             </div>
           </div>
         </div>
-        <div class = "row">
+        <div class = "row justify-content-center" style="width: 80%">
           <h3>Current Reservations</h3>
           <br>
           <div id="tableSection">
 
           </div>
         </div>
-        <div class = "row">
+        <div class = "row justify-content-center" style="width: 80%">
           <h3>Current Waiting List</h3>
           <br>
           <div id="waitlistSection">

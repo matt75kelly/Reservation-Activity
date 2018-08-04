@@ -13,33 +13,33 @@
   <body>
     <div class = "container">
       <div class = "row">
-        <div class="jumbotron">
-          <h1 class="display-4">Chez Bentley</h1>
-          <p class="lead">Make your Reservation</p>
+        <div class="jumbotron" style ="width: 100%; margin: 0 auto;">
+          <h1 class="display-4 text-center">Chez Bentley</h1>
+          <p class="lead text-center">Make your Reservation</p>
           <hr class="my-4">
-          <p>Reservations that cannot immediately be fullfilled will be added to our Wait List</p>
-          <div class = "row text-center">
-            <span><a class="btn btn-primary btn-lg" href="./tables" role="button">Tables</a></span>
-            <span><a class="btn btn-primary btn-lg" href="./" role="button">Home</a></span>
+          <p class="text-center">Reservations that cannot immediately be fullfilled will be added to our Wait List</p>
+          <div class = "row justify-content-center">
+            <div style = "margin:2vh 2vh"><a class="btn btn-primary btn-lg" href="./tables" role="button">Tables</a></div>
+            <div style = "margin:2vh 2vh"><a class="btn btn-primary btn-lg" href="./" role="button">Home</a></div>
           </div>
         </div>
       </div>
-      <div class = "row">
-        <form>
+      <div class = "row justify-content-center" style = "width: 100%">
+        <form  style="width: 60%">
           <div class="form-group">
-            <label for="reserve_name">Name</label>
+            <label class="text-center"for="reserve_name"><h4>Name</h4></label>
             <input type="input" class="form-control" id="reserve_name" placeholder="Name for the Reservation">
           </div>
           <div class="form-group">
-            <label for="reserve_phone">Phone Number</label>
+            <label class="text-center"for="reserve_phone"><h4>Phone Number</h4></label>
             <input type="tel" class="form-control" id="reserve_phone" placeholder="XXX-XXXX">
           </div>
           <div class="form-group">
-            <label for="reserve_email">Email address</label>
+            <label class="text-center"for="reserve_email"><h4>Email Address</h4></label>
             <input type="email" class="form-control" id="reserve_email" placeholder="Enter email">
           </div>
           <div class="form-group">
-            <label for="reserve_uniqueID">Unique ID</label>
+            <label class="text-center"for="reserve_uniqueID"><h4>Unique ID</h4></label>
             <input type="number" class="form-control" id="reserve_uniqueID" placeholder="Custom Code # to identify the Reservation">
           </div>
           <button type="submit" class="btn btn-primary submit">Submit</button>

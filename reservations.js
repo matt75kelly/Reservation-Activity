@@ -15,29 +15,7 @@ app.use(bodyParser.json());
 
 // Tables reservations (DATA)
 // =============================================================
-var reservations = [
-  {
-    routeName: "table 1",
-    name: "Yoda",
-    phone: "666-6666",
-    email: "666@666.com",
-    uniqueID: "666"
-  },
-  {
-    routeName: "table 2",
-    name: "Darth Maul",
-    phone: "777-7777",
-    email: "777@777.com",
-    uniqueID: "777"
-  },
-  {
-    routeName: "table 3",
-    name: "Obi Wan Kenobi",
-    phone: "555-5555",
-    email: "555@555.com",
-    uniqueID: "555"
-  }
-];
+var reservations = [];
 
 // Routes
 // =============================================================
