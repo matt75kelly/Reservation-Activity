@@ -70,7 +70,7 @@ app.get("/api/reservations/:reservation", function(req, res) {
   console.log(chosen);
 
   for (var i = 0; i < reservations.length; i++) {
-    if (chosen === reservations[i].routeName) {
+    if (chosen === reservations[i].customerID) {
       return res.json(reservations[i]);
     }
   }
