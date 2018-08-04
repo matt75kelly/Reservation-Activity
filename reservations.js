@@ -48,6 +48,16 @@ app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "view.html"));
 });
 
+app.get("/tables", function(req, res) {
+  // res.send("Welcome to the Tables Page!")
+  res.sendFile(path.join(__dirname, "tables.html"));
+});
+
+app.get("/reserve", function(req, res) {
+  // res.send("Welcome to the Tables Page!")
+  res.sendFile(path.join(__dirname, "reserve.html"));
+});
+
 // Displays all reservations
 app.get("/api/reservations", function(req, res) {
   return res.json(reservations);
